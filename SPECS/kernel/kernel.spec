@@ -121,6 +121,15 @@ Requires:       %{name} = %{version}-%{release}
 %description drivers-gpu
 This package contains the Linux kernel gpu support
 
+%package drivers-intree-amdgpu
+Summary:        Kernel amdgpu modules
+Group:          System Environment/Kernel
+Requires:       %{name} = %{version}-%{release}
+Requires:       %{name}-drivers-gpu = %{version}-%{release}
+
+%description drivers-intree-amdgpu
+This package contains the Linux kernel in-tree AMD gpu support
+
 %package drivers-sound
 Summary:        Kernel Sound modules
 Group:          System Environment/Kernel
@@ -327,6 +336,9 @@ echo "initrd of kernel %{uname_r} removed" >&2
 %post drivers-gpu
 /sbin/depmod -a %{uname_r}
 
+%post drivers-intree-amdgpu
+/sbin/depmod -a %{uname_r}
+
 %post drivers-sound
 /sbin/depmod -a %{uname_r}
 
@@ -365,6 +377,11 @@ echo "initrd of kernel %{uname_r} removed" >&2
 %files drivers-gpu
 %defattr(-,root,root)
 /lib/modules/%{uname_r}/kernel/drivers/gpu
+%exclude /lib/modules/%{uname_r}/kernel/drivers/gpu/drm/amd
+
+%files drivers-intree-amdgpu
+%defattr(-,root,root)
+/lib/modules/%{uname_r}/kernel/drivers/gpu/drm/amd
 
 %files drivers-sound
 %defattr(-,root,root)
