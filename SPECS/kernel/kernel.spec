@@ -377,7 +377,7 @@ echo "initrd of kernel %{uname_r} removed" >&2
 %files drivers-gpu
 %defattr(-,root,root)
 /lib/modules/%{uname_r}/kernel/drivers/gpu
-%exclude /lib/modules/%{uname_r}/kernel/drivers/gpu/drm/amd
+%exclude /lib/modules/%{uname_r}/kernel/drivers/gpu/drm/amd/*
 
 %files drivers-intree-amdgpu
 %defattr(-,root,root)
