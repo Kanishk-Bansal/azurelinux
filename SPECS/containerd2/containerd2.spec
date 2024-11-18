@@ -19,7 +19,7 @@ Source2: containerd.toml
 %{?systemd_requires}
 
 BuildRequires: git
-BuildRequires: golang < 1.23
+BuildRequires: golang
 BuildRequires: go-md2man
 BuildRequires: make
 BuildRequires: systemd-rpm-macros
