@@ -79,13 +79,13 @@ func checkIfContainerSystemdDetectVirt() (bool, error) {
 	stdout = strings.TrimSpace(stdout)
 	switch stdout {
 	case "none":
-		logger.Log.Debugf("Tool is not running in a container, systemd-detect-virt reports: '%s'", stdout)
+		logger.Log.Errorf("Tool is not running in a container, systemd-detect-virt reports: '%s'", stdout)
 		return false, nil
 	case "wsl":
-		logger.Log.Debugf("Tool is running in WSL, treating as a non-container environment, systemd-detect-virt reports: '%s'", stdout)
+		logger.Log.Errorf("Tool is running in WSL, treating as a non-container environment, systemd-detect-virt reports: '%s'", stdout)
 		return false, nil
 	default:
-		logger.Log.Debugf("Tool is running in a container, systemd-detect-virt reports: '%s'", stdout)
+		logger.Log.Errorf("Tool is running in a container, systemd-detect-virt reports: '%s'", stdout)
 		return true, nil
 	}
 }
