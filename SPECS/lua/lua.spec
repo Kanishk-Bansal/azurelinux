@@ -14,7 +14,7 @@
 Summary:        Powerful light-weight programming language
 Name:           lua
 Version:        %{major_version}.4
-Release:        1%{?dist}
+Release:        2%{?dist}
 License:        MIT
 Vendor:         Microsoft Corporation
 Distribution:   Mariner
@@ -216,6 +216,9 @@ popd
 %{_libdir}/*.a
 
 %changelog
+* Wed Nov 27 2024 CBL-Mariner Servicing Account <cblmargh@microsoft.com> - 5.4.4-2
+- address: 
+
 * Tue May 09 2023 Bala <balakumaran.kannan@microsoft.com> - 5.4.4-1
 - Upgrade to version 5.4.4 to fix CVE-2021-44964
 - Removed patches that are already part of new version

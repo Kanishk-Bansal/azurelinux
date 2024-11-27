@@ -2,7 +2,7 @@
 Summary:        An asynchronous networking framework written in Python
 Name:           python-twisted
 Version:        22.10.0
-Release:        3%{?dist}
+Release:        4%{?dist}
 License:        MIT
 Vendor:         Microsoft Corporation
 Distribution:   Mariner
@@ -101,6 +101,9 @@ LANG=en_US.UTF-8 sudo -u test /home/test/.local/bin/tox -e nocov-posix-alldeps
 %{_bindir}/cftp3
 
 %changelog
+* Wed Nov 27 2024 CBL-Mariner Servicing Account <cblmargh@microsoft.com> - 22.10.0-4
+- address: 
+
 * Thu Aug 01 2024 Sindhu Karri <lakarri@microsoft.com> - 22.10.0-3
 - Fix CVE-2024-41671 and CVE-2024-41810 with a patch
 

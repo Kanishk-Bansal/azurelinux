@@ -1,7 +1,7 @@
 Summary:        Systemd-250
 Name:           systemd
 Version:        250.3
-Release:        21%{?dist}
+Release:        22%{?dist}
 License:        LGPLv2+ AND GPLv2+ AND MIT
 Vendor:         Microsoft Corporation
 Distribution:   Mariner
@@ -289,6 +289,9 @@ fi
 %files lang -f %{name}.lang
 
 %changelog
+* Wed Nov 27 2024 CBL-Mariner Servicing Account <cblmargh@microsoft.com> - 250.3-22
+- address: 
+
 * Mon Apr 08 2024 Henry Li <lihl@microsoft.com> - 250.3-21
 - Add patch to allow configurability of "UseDomains=" for networkd
 

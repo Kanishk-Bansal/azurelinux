@@ -12,7 +12,7 @@
 Summary:        CUPS printing system
 Name:           cups
 Version:        2.3.3%{OP_VER}
-Release:        8%{?dist}
+Release:        9%{?dist}
 License:        ASL 2.0 with exceptions
 Vendor:         Microsoft Corporation
 Distribution:   Mariner
@@ -657,6 +657,9 @@ rm -f %{cups_serverbin}/backend/smb
 %{_mandir}/man7/ippeveps.7.gz
 
 %changelog
+* Wed Nov 27 2024 CBL-Mariner Servicing Account <cblmargh@microsoft.com> - 2.3.3op2-9
+- address: 
+
 * Tue May 21 2024 Lanze Liu <lanzeliu@microsoft.com> - 2.3.3op2-8
 - Add patch for CVE-2022-26691.
 

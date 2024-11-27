@@ -9,7 +9,7 @@
 Summary:        Rust Programming Language
 Name:           rust
 Version:        1.72.0
-Release:        8%{?dist}
+Release:        9%{?dist}
 License:        (ASL 2.0 OR MIT) AND BSD AND CC-BY-3.0
 Vendor:         Microsoft Corporation
 Distribution:   Mariner
@@ -171,6 +171,9 @@ rm %{buildroot}%{_bindir}/*.old
 %{_mandir}/man1/*
 
 %changelog
+* Wed Nov 27 2024 CBL-Mariner Servicing Account <cblmargh@microsoft.com> - 1.72.0-9
+- address: 
+
 * Thu Aug 08 2024 corvus-callidus <108946721+corvus-callidus@users.noreply.github.com> - 1.72.0-8
 - Patch CVE-2024-32884 and CVE-2024-31852
 

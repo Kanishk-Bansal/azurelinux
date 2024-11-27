@@ -2,7 +2,7 @@
 Summary:        Boost
 Name:           boost
 Version:        1.76.0
-Release:        4%{?dist}
+Release:        5%{?dist}
 License:        Boost
 Vendor:         Microsoft Corporation
 Distribution:   Mariner
@@ -68,6 +68,9 @@ rm -rf %{buildroot}%{_libdir}/cmake
 %{_libdir}/libboost_*.a
 
 %changelog
+* Wed Nov 27 2024 CBL-Mariner Servicing Account <cblmargh@microsoft.com> - 1.76.0-5
+- address: 
+
 * Wed Oct 25 2023 Rohit Rawat <rohitrawat@microsoft.com> - 1.76.0-4
 - Patch CVE-2023-45853 for zlib
 

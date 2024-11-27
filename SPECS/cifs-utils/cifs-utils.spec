@@ -1,7 +1,7 @@
 Summary:        cifs client utils
 Name:           cifs-utils
 Version:        6.14
-Release:        2%{?dist}
+Release:        3%{?dist}
 License:        GPLv3
 Vendor:         Microsoft Corporation
 Distribution:   Mariner
@@ -72,6 +72,9 @@ make %{?_smp_mflags} check
 %{_includedir}/cifsidmap.h
 
 %changelog
+* Wed Nov 27 2024 CBL-Mariner Servicing Account <cblmargh@microsoft.com> - 6.14-3
+- address: 
+
 * Tue May 17 2022 Chris Co <chrco@microsoft.com> - 6.14-2
 - Address CVE-2022-27239, CVE-2022-29869
 - Fix lint

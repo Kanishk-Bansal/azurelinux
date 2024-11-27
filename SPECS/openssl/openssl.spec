@@ -4,7 +4,7 @@
 Summary:        Utilities from the general purpose cryptography library with TLS implementation
 Name:           openssl
 Version:        1.1.1k
-Release:        35%{?dist}
+Release:        36%{?dist}
 License:        OpenSSL
 Vendor:         Microsoft Corporation
 Distribution:   Mariner
@@ -371,6 +371,9 @@ rm -f %{buildroot}%{_sysconfdir}/pki/tls/ct_log_list.cnf.dist
 %postun libs -p /sbin/ldconfig
 
 %changelog
+* Wed Nov 27 2024 CBL-Mariner Servicing Account <cblmargh@microsoft.com> - 1.1.1k-36
+- address: 
+
 * Mon Jul 29 2024 Suresh Thelkar <sthelkar@microsoft.com> - 1.1.1k-35
 - Bug fix for the Patch CVE-2024-5535
 

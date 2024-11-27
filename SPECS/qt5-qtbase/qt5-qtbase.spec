@@ -33,7 +33,7 @@
 Name:         qt5-qtbase
 Summary:      Qt5 - QtBase components
 Version:      5.12.11
-Release:      14%{?dist}
+Release:      15%{?dist}
 # See LICENSE.GPL3-EXCEPT.txt, for exception details
 License:      GFDL AND LGPLv3 AND GPLv2 AND GPLv3 with exceptions AND QT License Agreement 4.0
 Vendor:       Microsoft Corporation
@@ -784,6 +784,9 @@ fi
 %{_qt5_libdir}/cmake/Qt5Gui/Qt5Gui_QXdgDesktopPortalThemePlugin.cmake
 
 %changelog
+* Wed Nov 27 2024 CBL-Mariner Servicing Account <cblmargh@microsoft.com> - 5.12.11-15
+- address: 
+
 * Wed Oct 23 2024 Mykhailo Bykhovtsev <mbykhovtsev@microsoft.com> - 5.12.11-14
 - Add patch to resolve CVE-2022-25255.
 

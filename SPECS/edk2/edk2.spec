@@ -45,7 +45,7 @@ ExclusiveArch: x86_64
 
 Name:       edk2
 Version:    %{GITDATE}git%{GITCOMMIT}
-Release:    40%{?dist}
+Release:    41%{?dist}
 Summary:    UEFI firmware for 64-bit virtual machines
 License:    BSD-2-Clause-Patent and OpenSSL and MIT
 URL:        http://www.tianocore.org
@@ -711,6 +711,9 @@ $tests_ok
 
 
 %changelog
+* Wed Nov 27 2024 CBL-Mariner Servicing Account <cblmargh@microsoft.com> - 20230301gitf80f052277c8-41
+- address: 
+
 * Mon Sep 16 2024 Minghe Ren <mingheren@microsoft.com> - 20230301gitf80f052277c8-40
 - Add CVE-2022-36763, CVE-2022-36765, CVE-2023-45230, CVE-2023-45232, CVE-2023-45234, CVE-2023-45235, CVE-2023-45236, CVE-2023-45237 patch
 - Add fix-tpm-build-issue-from-CVE-2022-36763.patch 

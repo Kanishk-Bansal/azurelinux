@@ -1,7 +1,7 @@
 Summary:        Text file viewer
 Name:           less
 Version:        590
-Release:        4%{?dist}
+Release:        5%{?dist}
 License:        GPLv3+ OR BSD
 Vendor:         Microsoft Corporation
 Distribution:   Mariner
@@ -34,6 +34,9 @@ The Less package contains a text file viewer
 %{_mandir}/*/*
 
 %changelog
+* Wed Nov 27 2024 CBL-Mariner Servicing Account <cblmargh@microsoft.com> - 590-5
+- address: 
+
 * Mon Apr 22 2024 Dan Streetman <ddstreet@microsoft.com> - 590-4
 - patch CVE-2024-32487
 

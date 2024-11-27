@@ -2,7 +2,7 @@
 Summary:        Tool Command Language - the language and library.
 Name:           tcl
 Version:        8.6.13
-Release:        3%{?dist}
+Release:        4%{?dist}
 License:        TCL
 Vendor:         Microsoft Corporation
 Distribution:   Mariner
@@ -100,6 +100,9 @@ make test
 %{_mandir}/man3/*
 
 %changelog
+* Wed Nov 27 2024 CBL-Mariner Servicing Account <cblmargh@microsoft.com> - 8.6.13-4
+- address: 
+
 * Wed Oct 25 2023 Rohit Rawat <rohitrawat@microsoft.com> - 8.6.13-3
 - Patch CVE-2023-45853 in zlib
 

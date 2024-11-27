@@ -1,7 +1,7 @@
 Summary:        Programs for handling passwords in a secure way
 Name:           shadow-utils
 Version:        4.9
-Release:        13%{?dist}
+Release:        14%{?dist}
 License:        BSD
 Vendor:         Microsoft Corporation
 Distribution:   Mariner
@@ -178,6 +178,9 @@ chmod 000 %{_sysconfdir}/shadow
 %{_libdir}/libsubid.so
 
 %changelog
+* Wed Nov 27 2024 CBL-Mariner Servicing Account <cblmargh@microsoft.com> - 4.9-14
+- address: 
+
 * Wed Sep 20 2023 Kanika Nema <kanikanema@microsoft.com> - 4.9-13
 - Recompile with stack-protection fixed gcc version (CVE-2023-4039)
 - Address CVE-2023-29383

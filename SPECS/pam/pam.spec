@@ -1,7 +1,7 @@
 Summary:        Linux Pluggable Authentication Modules
 Name:           pam
 Version:        1.5.1
-Release:        6%{?dist}
+Release:        7%{?dist}
 License:        BSD and GPLv2+
 URL:            https://github.com/linux-pam/linux-pam
 Source0:        https://github.com/linux-pam/linux-pam/releases/download/v%{version}/Linux-PAM-%{version}.tar.xz
@@ -100,6 +100,9 @@ EOF
 %{_docdir}/%{name}-%{version}/*
 
 %changelog
+* Wed Nov 27 2024 CBL-Mariner Servicing Account <cblmargh@microsoft.com> - 1.5.1-7
+- address: 
+
 * Fri Mar 08 2024 Saul Paredes <saulparedes@microsoft.com> - 1.5.1-6
 - Add patch for CVE-2024-22365
 

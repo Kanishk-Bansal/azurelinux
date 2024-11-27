@@ -1,7 +1,7 @@
 Summary:        Configuration-management, application deployment, cloud provisioning system
 Name:           ansible
 Version:        2.14.12
-Release:        2%{?dist}
+Release:        3%{?dist}
 License:        GPLv3+
 Vendor:         Microsoft Corporation
 Distribution:   Mariner
@@ -48,6 +48,9 @@ python3 setup.py test
 %{python3_sitelib}/*
 
 %changelog
+* Wed Nov 27 2024 CBL-Mariner Servicing Account <cblmargh@microsoft.com> - 2.14.12-3
+- address: 
+
 * Mon May 06 2024 Henry Li <lihl@microsoft.com> - 2.14.12-2
 - Revert version from 2.14.4 to 2.14.12
 - Add patch for CVE-2024-0690

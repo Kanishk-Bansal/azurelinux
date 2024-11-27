@@ -1,7 +1,7 @@
 Summary:        Python cryptography library
 Name:           python-cryptography
 Version:        3.3.2
-Release:        7%{?dist}
+Release:        8%{?dist}
 License:        ASL 2.0
 Vendor:         Microsoft Corporation
 Distribution:   Mariner
@@ -67,6 +67,9 @@ pip3 install pretend pytest hypothesis iso8601 cryptography_vectors pytz
 %{python3_sitelib}/*
 
 %changelog
+* Wed Nov 27 2024 CBL-Mariner Servicing Account <cblmargh@microsoft.com> - 3.3.2-8
+- address: 
+
 * Fri Jun 07 2024 Juan Camposeco <juanarturoc@microsoft.com> - 3.3.2-7
 - Adding dependency on release version for OpenSSL to fix CVE-2023-50782
 
