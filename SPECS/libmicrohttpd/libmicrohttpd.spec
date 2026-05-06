@@ -2,7 +2,7 @@ Name:           libmicrohttpd
 Vendor:         Microsoft Corporation
 Distribution:   Azure Linux
 Version:        0.9.77
-Release:        4%{?dist}
+Release:        5%{?dist}
 Summary:        Lightweight library for embedding a webserver in applications
 
 # * COPYING says that some main sources are only under LGPL-2.1-or-later
@@ -20,8 +20,7 @@ BuildRequires:  libtool
 BuildRequires:  texinfo
 BuildRequires:  gnutls-devel
 BuildRequires:  doxygen
-# Needed only for doc/doxygen 'full' build including dependency graphs
-#BuildRequires:  graphviz
+BuildRequires:  graphviz
 BuildRequires:  make
 Requires(post): info
 Requires(preun): info
@@ -63,7 +62,7 @@ Doxygen documentation for libmicrohttpd and some example source code
 %make_build
 # Using 'fast' to avoid BuildRequires on graphviz; when/if graphviz is available,
 # this can be switched to 'full' to build dependency graphs
-make -C doc/doxygen fast
+make -C doc/doxygen full
 
 %check
 %make_build check
