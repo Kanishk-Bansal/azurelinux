@@ -1,27 +1,13 @@
 Summary:        An URL retrieval utility and library
 Name:           curl
-Version:        8.11.1
-Release:        9%{?dist}
+Version:        8.21.0
+Release:        1%{?dist}
 License:        curl
 Vendor:         Microsoft Corporation
 Distribution:   Azure Linux
 Group:          System Environment/NetworkingLibraries
 URL:            https://curl.haxx.se
 Source0:        https://curl.haxx.se/download/%{name}-%{version}.tar.gz
-Patch0:         CVE-2025-0665.patch
-Patch1:         CVE-2025-0167.patch
-Patch2:         CVE-2025-0725.patch
-Patch3:         CVE-2025-10148.patch
-Patch4:         CVE-2025-14017.patch
-Patch5:         CVE-2026-1965.patch
-Patch6:         CVE-2026-3783.patch
-Patch7:         CVE-2026-3784.patch
-Patch8:         CVE-2026-4873.patch
-Patch9:         CVE-2026-6276.patch
-Patch10:        CVE-2026-7168.patch
-Patch11:        CVE-2026-5545.patch
-Patch12:        CVE-2026-6253.patch
-Patch13:        CVE-2026-6429.patch
 BuildRequires:  krb5-devel
 BuildRequires:  libnghttp2-devel
 BuildRequires:  libssh2-devel
@@ -111,6 +97,10 @@ find %{buildroot} -type f -name "*.la" -delete -print
 %{_libdir}/libcurl.so.*
 
 %changelog
+* Tue Jul 14 2026 Vijayender Putta <v-vijputta@microsoft.com> - 8.21.0-1
+- Upgrade to 8.21.0.
+- Dropped CVE-2025-0665, CVE-2025-0167, CVE-2025-0725, CVE-2025-10148, CVE-2025-14017, CVE-2026-1965, CVE-2026-3783, CVE-2026-3784, CVE-2026-4873, CVE-2026-6276, CVE-2026-7168, CVE-2026-5545, CVE-2026-6253, CVE-2026-6429 patches, fixed upstream in this release.
+
 * Mon Jun 15 2026 Vince Perri <viperri@microsoft.com> - 8.11.1-9
 - Remove cmake build dependency to break cyclic dependency between curl and cmake
 
